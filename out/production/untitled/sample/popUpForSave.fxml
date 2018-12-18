@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="225.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.popUpForSave">
+   <children>
+      <Button fx:id="savePopUp" layoutX="50.0" layoutY="145.0" mnemonicParsing="false" onAction="#onSavePopUp" text="Save" />
+      <Button fx:id="dontSavePopUp" layoutX="175.0" layoutY="145.0" mnemonicParsing="false" onAction="#onDontSavePopUp" text="Dont Save" />
+      <Button fx:id="cancel" layoutX="323.0" layoutY="145.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+      <TextField editable="false" layoutX="37.0" layoutY="49.0" prefHeight="31.0" prefWidth="364.0" text="Do you want to save changes ?">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+   </children>
+</AnchorPane>

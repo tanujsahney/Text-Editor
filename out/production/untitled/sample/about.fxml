@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.About">
+   <children>
+      <!--<TextField layoutX="103.0" layoutY="126.0" />-->
+   <!--<TextArea fx:id="About" text="about" BorderPane.alignment="CENTER" />-->
+   </children>
+   <center>
+      <TextArea editable="false" text="It is made in Jaxafx using IntelliJ IDE .&#10;It implements basic functionalities like opening, closing, saving a text file. &#10;It is made in December 2018. &#10;.&#10;It is made by Tanuj Sahney, CSE undergraduate MNNIT, Allahabad, (2017 - present)." BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></TextArea>
+   </center>
+</BorderPane>

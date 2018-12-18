@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="403.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem fx:id="new" onAction="#onNew" text="New" />
+              <MenuItem fx:id="open" onAction="#onOpen" text="Open" />
+                <MenuItem fx:id="save" onAction="#onSave" text="Save" />
+                <MenuItem fx:id="SaveAs" onAction="#onSaveAs" text="Save as.." />
+                <MenuItem fx:id="Exit" onAction="#onExit" text="Exit" />
+             </items>
+          </Menu>
+          <!--<Menu mnemonicParsing="false" text="Edit">-->
+            <!--<items>-->
+              <!--<MenuItem fx:id="delete" mnemonicParsing="false" onAction="#onDelete" text="Delete" />-->
+            <!--</items>-->
+          <!--</Menu>-->
+          <Menu text="Help">
+              <MenuItem text="Help" />
+         <items>
+             <MenuItem fx:id="About" onAction="#onAbout" text="About" />
+         </items>
+          </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox prefHeight="38.0" prefWidth="757.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+   </center>
+</BorderPane>
